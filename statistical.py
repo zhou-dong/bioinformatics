@@ -2,7 +2,7 @@
 
 '''
 Three most common errors on copying process: 
-    
+
     1. Substitution of an amino acid
     2. Insertion of one or more new amino acids
     3. Deletion of one or more amino acids
@@ -16,7 +16,6 @@ Example:
     Substitution: 13
     Insertion: 7 -12
     Deletion: 15
-
 '''
 
 from numpy  import *
@@ -56,6 +55,8 @@ T  [ 0.   0.   0.   0.4  0. ]
 L  [ 0.   0.   0.   0.   0.6]
 V  [ 0.   0.   0.   0.   0.2]]
 
-MOST Ancestor: CCGSL = 0.8 * 0.6 * 0.8 * 0.6 * 0.6 = 0.13824
+MOST Ancestor: 
+    CCGSL = 0.8 * 0.6 * 0.8 * 0.6 * 0.6 
+          = 0.13824
 '''
 print 0.8 * 0.6 * 0.8 * 0.6 * 0.6
