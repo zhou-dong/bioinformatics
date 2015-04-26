@@ -14,7 +14,7 @@ Example:
     1 3 5 7 9 11 14   19
 
     Substitution: 13
-    Insertion: 7 -12
+    Insertion: 7-12
     Deletion: 15
 '''
 
