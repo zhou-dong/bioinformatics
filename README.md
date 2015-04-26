@@ -1,5 +1,5 @@
 # bioinformatics
 
-practice the method of bioinformatics
+Practice the method of bioinformatics
 
-Statistical Profiles
+1. Statistical Profiles
