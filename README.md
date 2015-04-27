@@ -8,4 +8,6 @@ Practice the method of bioinformatics
 
 3. Bayes Network
 
-4. Hidden Markov Model
+4. Markov Chain
+
+5. Hidden Markov Model
