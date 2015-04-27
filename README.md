@@ -13,4 +13,6 @@ Practice the method of bioinformatics
     - Statistics
     - Matrix
 
-5. Hidden Markov Model
+5. Transition Probabilities
+
+6. Hidden Markov Model
