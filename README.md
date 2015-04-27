@@ -15,4 +15,6 @@ Practice the method of bioinformatics
 
 5. Transition Probabilities
 
-6. Hidden Markov Model
+6. Laplacian Smoothing problem
+
+7. Hidden Markov Model
