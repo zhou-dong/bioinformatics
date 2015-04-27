@@ -10,4 +10,7 @@ Practice the method of bioinformatics
 
 4. Markov Chain
 
+    - Statistics
+    - Matrix
+
 5. Hidden Markov Model
