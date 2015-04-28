@@ -37,9 +37,30 @@ Markov Chain
 
     Stationary Distribution:
 
-    P(R_T) = P(R_{T-1})
+    P(R_T) = P(R_{T_1})
 
-    P(R_{T-1}) * P(R_T|R_{T-1}) + P(S_{T-1}) * 
+    P(R_{T-1}) * P(R_T|R_{T_1}) + P(S_{T_1}) * P(R_T|S_{T_1}) = P(R_{T_1})
+
+    Let:
+        P(R_{T_1}) = x
+        P(S_{T_1}) = 1 - x
+    Then:
+        x * 0.6 + 0.2 * (1 - x) = x
+        0.2 = 0.6x
+        x = 1/3
+
+    P(R) = 1/3
+    P(S) = 2/3
+
+    Transition Probabilities:
+
+    R S S S R S R
+
+    P(R_0) = 1
+    P(R|S) = 2/4 = 1/2
+    P(S|S) = 2/4 = 1/2
+    P(R|R) = 0/2 = 0
+    P(S|R) = 2/2 = 1
 
 '''
 
