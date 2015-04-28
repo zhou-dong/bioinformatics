@@ -1,6 +1,6 @@
 # Markov
 
-## Markov Chain
+#### Markov Chain
 
 State   Ranny   Sunny   P_0         P_1             P_2             P_3  
 Rainy   0.6     0.2     P(R_0) = 1  P(R_1) = 0.6    P(R_2) = 0.44   P(R_3) = 0.376  
@@ -54,7 +54,7 @@ x * 0.6 + 0.2 * (1 - x) = x
 P(R) = 1/3  
 P(S) = 2/3
 
-## Transition Probabilities:
+#### Transition Probabilities:
 
 R S S S R S R
 
@@ -64,7 +64,7 @@ P(S|S) = 2/4 = 1/2
 P(R|R) = 0/2 = 0  
 P(S|R) = 2/2 = 1  
 
-## Happy or Grumpy problem
+#### Happy or Grumpy problem
 
 State   Happy   Grumpy
 Rain    0.4     0.6
