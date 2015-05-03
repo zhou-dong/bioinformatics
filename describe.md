@@ -6,13 +6,20 @@ Scientists tracking the Ebola outbreak in Guinea say the virus has mutated. More
 
 Our project is going to  find the common ancestor from descendant to help scientists to conquer the wars between Humans Beening and Ebola.
 
-## Steps:
+## Abstract
 
-1. Use FP-Growth to Find the Frequent Pattern
+Language
 
-2. Use Dynamic Programming to find the different of sequence Alignment 
+- python
 
-3. Check the result
+Algorithm
+
+- Dynamic programming
+
+Python Package:
+
+- Biopython
+- matplotlib
 
 ## Data
 
@@ -28,22 +35,15 @@ Data Format: Fasta
     ASSTKVDKKIEP
 ```
 
-## Development Information
+## Steps
 
-Language
+1. Use Dynamic Programming to find the different of sequence Alignment 
 
-- python
+2. Use score to cluster the sequences to different group
 
-Algorithm
+## Example
 
-- FP-Growth
-- Dynamic programming
-
-Python Package:
-
-- Biopython
-- python-fp-growth
-- matplotlib
+- Use dynamic programming to compare two sequence
 
 ```
 E-V--QLLES--GGGL-VKPGGSL--RLSCAASGFTLIN--------Y--RXN-----WVRQA-PG---KGL-E-WVS---S----I-S-SSSSYIHYADSVKGRFT--ISRDNAENSLYLQXNSLRAEDTAVYYCVREGPRATGY-SXA--DVFDIWGQG-TXV----TVSSASTKGPSVF--PLAPS--S-KSTSGGTAA-LGCL-V-KDYFP-EP-V-T-VSWNSGALTSG-----VHTFPAVLQ-S--SGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVD--K-KV---E--------P--K----
@@ -59,7 +59,12 @@ EAIVNAQPKCNPNLHYWTTQDE-GAAIG-LAWI-PYFG-----P-AAEGIYTEGL-M-H-N---QD-G--L---------
 EVQLEGGLPGAAGTLNQGLIGRNELQLRATERTFSLKADFWGGTLGPIHKNTKDV
 ```
 
+- List the differnt scores
+
 <img alt="bar img" src="/img/score_sequence_bar.png"/>
+
+- Use differnt score the cluster
+
 <img alt="bar img" src="/img/cluster_pie_charts.png"/>
 
 ## Install Package
