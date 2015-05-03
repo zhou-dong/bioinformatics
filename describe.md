@@ -55,6 +55,7 @@ EVQSLVSLRATINYNWQPGKLWSSSSSDFTISSLQAEDAVYYCYSAFGGTVTVAPSVFPPSKSGTACLYPEVVNALSGVT
 ```
 
 <img alt="bar img" src="/img/score_sequence_bar.png"/>
+<img alt="bar img" src="/img/cluster_pie_charts.png"/>
 
 ## Install Package
 
