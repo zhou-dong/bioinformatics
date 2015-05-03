@@ -4,7 +4,7 @@
 
 Scientists tracking the Ebola outbreak in Guinea say the virus has mutated. More than 22,000 people have been infected with Ebola and 8,795 have died in Guinea, Sierra Leone and Liberia. Scientists are starting to analyse hundreds of blood samples from Ebola patients in Guinea. They are tracking how the virus is changing and trying to establish whether it's able to jump more easily from person to person. "We know the virus is changing quite a lot," said human geneticist Dr Anavaj Sakuntabhai. A virus can change itself to less deadly, but more contagious and that's something we are afraid of Dr Anavaj Sakuntabhai, Geneticist "That's important for diagnosing (new cases) and for treatment. We need to know how the virus (is changing) to keep up with our enemy."
 
-Our project is going to  find the common ancestor from descendant to help scientists to conquer the wars between Humans Beening and Ebola.
+Our project is going to use the dynamic programming method to calculte the similar of sequence and then clustring them to different groups.
 
 ## Abstract
 
