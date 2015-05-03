@@ -108,11 +108,9 @@ def cluster_bar_charts(scores):
 def show_alignment():
     data = fetch_fasta_list()
     result = dynamic_programming_alignment(data[0], data[1])
-    #for x in result:
-    #    print x
     print format_alignment(*result)
     comm = common(result[0], result[1])
     print "".join(comm)
 
 show_alignment()
-#clustering()
+clustering()
