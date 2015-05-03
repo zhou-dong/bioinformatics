@@ -1,4 +1,4 @@
-# Find Ebola Ancestor from fasta
+# Clustering Ebolar virus fasta sequence with Dynamic Programming
 
 ## Description
 
@@ -67,17 +67,31 @@ EAIVNAQPKCNPNLHYWTTQDE-GAAIG-LAWI-PYFG-----P-AAEGIYTEGL-M-H-N---QD-G--L---------
 EVQLEGGLPGAAGTLNQGLIGRNELQLRATERTFSLKADFWGGTLGPIHKNTKDV
 ```
 
-- List the differnt scores
+
+Calculate scores:
+
+1. We choose one fasta sequcen to be pivot
+2. Compare difference between pivot and other sequence.
+3. Genereate the common sequence between them
 
 <img alt="bar img" src="/img/score_sequence_bar.png"/>
 
-- Visualize differnt sequence use the score
+Visualize differnt sequence use the score
+
+1. Use the score to be wigth and length to represent the circle
+2. random add circle into picture
 
 <img alt="bar img" src="/img/ellipses.png"/>
 
 - Use differnt score the cluster
 
+1. We clustering the result use the scores
+2. We divided scores into different levels
+3. Calculte how many items in diffent levels
+
 <img alt="bar img" src="/img/cluster_pie_charts.png"/>
+
+Check the result
 
 ## Install Package
 
