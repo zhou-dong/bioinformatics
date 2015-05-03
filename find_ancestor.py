@@ -57,7 +57,6 @@ def clustering():
         score = (dynamic_programming_alignment(pivot[1], value)[2]);
         scores.append(score)
         print key, length, score
-    
     show_ellipse(scores)
     #cluster_pie_charts(scores)
     #cluster_bar_charts(scores)
