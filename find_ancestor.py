@@ -5,6 +5,7 @@ from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
 from operator import itemgetter, attrgetter, methodcaller
 from fp_growth import find_frequent_itemsets
+import numpy as np
 import matplotlib.pyplot as plt
 
 input_file = "./ebola.fasta"
@@ -14,13 +15,12 @@ def fetch_fasta_dict(file_path = input_file):
     result = {}
     fasta_sequences = SeqIO.parse(open(file_path),'fasta')
     for fasta in fasta_sequences:
-        name, sequence = fasta.id, str(fasta.seq)
-        seq_len = len(sequence)
-        if seq_len > 500 or seq_len < 150:
+        name, sequence, describe = fasta.id, str(fasta.seq), fasta.description
+        if "Crystal" not in describe:
             continue
         result[name] = sequence
     fasta_sequences.close()
-    print "load file finish"
+    print "load file finis with len:", len(result)
     return result
 
 def fetch_fasta_list(file_path = input_file):
@@ -28,17 +28,15 @@ def fetch_fasta_list(file_path = input_file):
     result = []
     fasta_sequences = SeqIO.parse(open(file_path),'fasta')
     for fasta in fasta_sequences:
-        name, sequence = fasta.id, str(fasta.seq)
-        seq_len = len(sequence)
-        if seq_len > 500 or seq_len < 150:
+        name, sequence, describe = fasta.id, str(fasta.seq), fasta.description
+        if "Crystal" not in describe:
             continue
         result.append(sequence)
     fasta_sequences.close()
     print "load file finish"
     return result
 
-# use dynamic programming to alignment two sequence
-def alignment(a, b):
+def dynamic_programming_alignment(a, b):
     result = pairwise2.align.globalxx(a, b)
     #result = pairwise2.align.globalmx(a, b, 2, 1)
     result = sorted(result, key=itemgetter(2), reverse=True)
@@ -48,28 +46,74 @@ def alignment(a, b):
 def common(a, b):
     return [i for i, j in zip(a, b) if i == j]
 
-def calculate_different(dicts):
+def clustering():
+    dicts = fetch_fasta_dict()
     pivot = dicts.popitem()
-    result = {}
+    lengths = []
+    scores = []
     for key, value in dicts.iteritems():
-        result[key] = (alignment(pivot[1], value)[2])/len(value);
-        print result[key]
-    return result
+        length = len(value)
+        lengths.append(length)
+        score = (dynamic_programming_alignment(pivot[1], value)[2]);
+        scores.append(score)
+        print key, length, score
+    
+    cluster_pie_charts(scores)
+    #cluster_bar_charts(scores)
+    return lengths, scores
+
+def cluster_pie_charts(scores):
+    threshold = 50
+    datas = {}
+    for score in scores:
+        label = int(score / 50)
+        if label in datas:
+            datas[label] = datas[label] + 1
+        else:
+            datas[label] = 1
+    sizes = []
+    labels = []
+    for key, value in datas.iteritems():
+        sizes.append(value)
+        labels.append(key*50)
+    colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral', "green"]
+    plt.pie(sizes,
+            labels=labels, 
+            colors=colors,
+            autopct='%1.1f%%', 
+            shadow=True, 
+            startangle=90
+            )
+    plt.axis('equal')
+    plt.show()
+    
+def cluster_bar_charts(scores):
+    index = np.arange(len(scores))
+    bar_width = 0.35
+    opacity = 0.4
+    error_config = {'ecolor': '0.3'}
+    rects1 = plt.bar(index, scores, bar_width,
+                 alpha=opacity,
+                 color='g',
+                 error_kw=error_config,
+                 label='score')
+    plt.xlabel('Index of sequence')
+    plt.ylabel('Scores')
+    plt.title('Scores of Sequence')
+    plt.xticks(index + bar_width, range(0, len(scores)))
+    plt.legend()
+    plt.plot(scores, "r--")
+    plt.show()
 
 def show_alignment():
     data = fetch_fasta_list()
-    result = alignment(data[0], data[1])
+    result = dynamic_programming_alignment(data[0], data[1])
     for x in result:
         print x
     comm = common(result[0], result[1])
     print "".join(comm)
 
-#print alignment(datas[0], datas[1])
-#cal_dif = calculate_different(datas)
-#plt.plot(cal_dif.values(), 'ro')
-#plt.axis([0, 42, 0, 1])
-#plt.show()
 #print format_alignment(*r)
-#print format_alignment(*r1)
 
-show_alignment();
+show_alignment()
+clustering()
