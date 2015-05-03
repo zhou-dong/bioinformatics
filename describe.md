@@ -61,13 +61,13 @@ EAIVNAQPKCNPNLHYWTTQDE-GAAIG-LAWI-PYFG-----P-AAEGIYTEGL-M-H-N---QD-G--L---------
 EVQLEGGLPGAAGTLNQGLIGRNELQLRATERTFSLKADFWGGTLGPIHKNTKDV
 ```
 
-- Visualize differnt sequence use the score
-
-<img alt="bar img" src="/img/ellipses.png"/>
-
 - List the differnt scores
 
 <img alt="bar img" src="/img/score_sequence_bar.png"/>
+
+- Visualize differnt sequence use the score
+
+<img alt="bar img" src="/img/ellipses.png"/>
 
 - Use differnt score the cluster
 
