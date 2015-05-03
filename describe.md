@@ -59,6 +59,11 @@ EAIVNAQPKCNPNLHYWTTQDE-GAAIG-LAWI-PYFG-----P-AAEGIYTEGL-M-H-N---QD-G--L---------
 0
 269
 EVQLEGGLPGAAGTLNQGLIGRNELQLRATERTFSLKADFWGGTLGPIHKNTKDV
+
+E--V--Q------L-----L-ESG---GGL--VKP--GGSLRLSCAASGF-T--LINYRXNWVRQAPGKGLEWVSSISSSSSYIHYADSVKG-RFTISRDNAE---NSLYLQXNSL--RAEDTAVYYCVREGPRATGYSXADVFDIWGQGTXVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHT-FPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNH---KPSN-T-KVD-----KKVEPK
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+EAIVNAQPKCNPNLHYWTTQDE-GAAIG-LAWI-PYFG-----P-AAEGIYTEGL-M-H-N---QD-G--L------------I-----C-GLRQ-L-A-N-ETTQA-L--Q---LFLRA--T-----T-EL-R-T-------F-------------------S-I-LN-R-K-------A----I-D-FLL-Q-R-W--G----G--TCH-I-L---G----------P---D-C-C-IE-P-HDWTK--NITDKIDQIIHDF-V--D
+  Score=55
 ```
 
 <img alt="bar img" src="/img/score_sequence_bar.png"/>
