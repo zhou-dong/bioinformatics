@@ -20,3 +20,5 @@ Practice the method of bioinformatics
 7. Hidden Markov Model
 
     - Particle Filter
+
+8. Dynamic programming
