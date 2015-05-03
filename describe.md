@@ -39,7 +39,9 @@ Data Format: Fasta
 
 1. Use Dynamic Programming to find the different of sequence Alignment 
 
-2. Use score to cluster the sequences to different group
+2. Find the common sequence
+
+3. Use score to cluster the sequences to different group
 
 ## Example
 
@@ -69,6 +71,7 @@ EVQLEGGLPGAAGTLNQGLIGRNELQLRATERTFSLKADFWGGTLGPIHKNTKDV
 
 ## Install Package
 
+<!--
 FP-growth:
 
     git clone https://github.com/enaeseth/python-fp-growth.git
@@ -79,7 +82,7 @@ FP-growth:
 Test FP-Growth
 
     python -m fp_growth -s 4 examples/tsk.csv
-
+-->
 Install [Biopytho](http://biopython.org/wiki/Download)
 
     python setup.py build
