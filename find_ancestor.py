@@ -58,9 +58,33 @@ def clustering():
         scores.append(score)
         print key, length, score
     
-    cluster_pie_charts(scores)
+    show_ellipse(scores)
+    #cluster_pie_charts(scores)
     #cluster_bar_charts(scores)
     return lengths, scores
+
+from pylab import figure, show, rand
+from matplotlib.patches import Ellipse
+
+def show_ellipse(scores):
+    NUM = len(scores)
+    ellipses = []
+    for score in scores:
+        ellipse = Ellipse(xy=rand(2)*10,
+                width=score/100, 
+                height=score/100, 
+                angle=rand()*360)
+        ellipses.append(ellipse)
+    fig = figure()
+    ax = fig.add_subplot(111, aspect='equal')
+    for e in ellipses:
+        ax.add_artist(e)
+        e.set_clip_box(ax.bbox)
+        e.set_alpha(rand())
+        e.set_facecolor(rand(3))
+    ax.set_xlim(0, 11)
+    ax.set_ylim(0, 11)
+    show()
 
 def cluster_pie_charts(scores):
     threshold = 50
