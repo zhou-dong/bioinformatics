@@ -47,6 +47,8 @@ Data Format: Fasta
 
 - Use dynamic programming to compare two sequence
 
+<img alt="bar img" src="/img/ellipses.png"/>
+
 ```
 E-V--QLLES--GGGL-VKPGGSL--RLSCAASGFTLIN--------Y--RXN-----WVRQA-PG---KGL-E-WVS---S----I-S-SSSSYIHYADSVKGRFT--ISRDNAENSLYLQXNSLRAEDTAVYYCVREGPRATGY-SXA--DVFDIWGQG-TXV----TVSSASTKGPSVF--PLAPS--S-KSTSGGTAA-LGCL-V-KDYFP-EP-V-T-VSWNSGALTSG-----VHTFPAVLQ-S--SGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVD--K-KV---E--------P--K----
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
