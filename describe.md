@@ -1,4 +1,4 @@
-# Clustering Ebolar virus fasta sequence with Dynamic Programming
+# Clustering Ebola virus fasta sequence with Dynamic Programming
 
 ## Description
 
