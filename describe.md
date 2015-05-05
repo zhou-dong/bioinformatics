@@ -112,3 +112,13 @@ Install [Biopytho](http://biopython.org/wiki/Download)
     python setup.py build
     python setup.py test
     sudo python setup.py install
+
+Install scipy
+
+    pip install scipy
+
+Install sklearn
+
+    pip install -U scikit-learn
+
+
