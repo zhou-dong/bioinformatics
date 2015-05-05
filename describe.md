@@ -93,20 +93,20 @@ Visualize differnt sequence use the score
 
 Check the result
 
+We think if position of the characters in sequence we could use K-means to clustering
+
+After we use K-means to clustering the result is:
+
+<img alt="bar img" src="/img/k-means-3.png"/>
+
+<img alt="bar img" src="/img/k-means-4.png"/>
+
+The result were terrible, so we do think the order of the characters in sequence.
+
+And dynamic programming is better clustering method than some maching learning method.
+
 ## Install Package
 
-<!--
-FP-growth:
-
-    git clone https://github.com/enaeseth/python-fp-growth.git
-    cd python-fp-growth
-    python setup.py install
-    sudo python setup.py install
-
-Test FP-Growth
-
-    python -m fp_growth -s 4 examples/tsk.csv
--->
 Install [Biopytho](http://biopython.org/wiki/Download)
 
     python setup.py build
@@ -120,5 +120,3 @@ Install scipy
 Install sklearn
 
     pip install -U scikit-learn
-
-
